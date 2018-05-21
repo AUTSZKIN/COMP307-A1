@@ -1,0 +1,394 @@
+Here is some sample output from myself running my DTL program
+
+
+Reading data from file /Users/danielwalker/Desktop/COMP307_A1/Assignment1_Part2/src/hepatitis.dat
+2 categories
+16 attributes
+Read 137 instances
+Read in File: //Users/danielwalker/Desktop/COMP307_A1/Assignment1_Part2/src/hepatitis-training-run10.dat
+Categories = 2
+Attributes = 16
+100 instances found 
+
+Attribute: AGE => True(a) live/die Ratio = 18.0/5.0 | False(b) live/die Ratio : 63.0/14.0
+Attribute: FEMALE => True(a) live/die Ratio = 10.0/0.0 | False(b) live/die Ratio : 71.0/19.0
+Attribute: STEROID => True(a) live/die Ratio = 43.0/10.0 | False(b) live/die Ratio : 38.0/9.0
+Attribute: ANTIVIRALS => True(a) live/die Ratio = 67.0/17.0 | False(b) live/die Ratio : 14.0/2.0
+Attribute: FATIGUE => True(a) live/die Ratio = 31.0/1.0 | False(b) live/die Ratio : 50.0/18.0
+Attribute: MALAISE => True(a) live/die Ratio = 55.0/5.0 | False(b) live/die Ratio : 26.0/14.0
+Attribute: ANOREXIA => True(a) live/die Ratio = 65.0/13.0 | False(b) live/die Ratio : 16.0/6.0
+Attribute: BIGLIVER => True(a) live/die Ratio = 66.0/16.0 | False(b) live/die Ratio : 15.0/3.0
+Attribute: FIRMLIVER => True(a) live/die Ratio = 48.0/10.0 | False(b) live/die Ratio : 33.0/9.0
+Attribute: SPLEENPALPABLE => True(a) live/die Ratio = 66.0/13.0 | False(b) live/die Ratio : 15.0/6.0
+Attribute: SPIDERS => True(a) live/die Ratio = 64.0/5.0 | False(b) live/die Ratio : 17.0/14.0
+Attribute: ASCITES => True(a) live/die Ratio = 76.0/9.0 | False(b) live/die Ratio : 5.0/10.0
+Attribute: VARICES => True(a) live/die Ratio = 76.0/11.0 | False(b) live/die Ratio : 5.0/8.0
+Attribute: BILIRUBIN => True(a) live/die Ratio = 43.0/16.0 | False(b) live/die Ratio : 38.0/3.0
+Attribute: SGOT => True(a) live/die Ratio = 17.0/6.0 | False(b) live/die Ratio : 64.0/13.0
+Attribute: HISTOLOGY => True(a) live/die Ratio = 29.0/15.0 | False(b) live/die Ratio : 52.0/4.0
+
+ Display Node Impurity Levels 
+
+=> ASCITES 
+ Average Weighted Impurity =  0.2276078431372549 | ImpurityBSide: 0.4444444444444444 | ImpurityLSide: 0.18934256055363322
+=> SPIDERS 
+ Average Weighted Impurity =  0.24630201028517998 | ImpurityBSide: 0.4953173777315296 | ImpurityLSide: 0.13442554085276204
+=> VARICES 
+ Average Weighted Impurity =  0.25372236958443856 | ImpurityBSide: 0.4733727810650888 | ImpurityLSide: 0.22090104373100808
+=> HISTOLOGY 
+ Average Weighted Impurity =  0.272012987012987 | ImpurityBSide: 0.1326530612244898 | ImpurityLSide: 0.4493801652892561
+=> MALAISE 
+ Average Weighted Impurity =  0.27366666666666667 | ImpurityBSide: 0.45499999999999996 | ImpurityLSide: 0.15277777777777776
+=> FATIGUE 
+ Average Weighted Impurity =  0.2840808823529412 | ImpurityBSide: 0.3892733564013841 | ImpurityLSide: 0.060546875
+=> BILIRUBIN 
+ Average Weighted Impurity =  0.2888300950806118 | ImpurityBSide: 0.1356335514574658 | ImpurityLSide: 0.3952887101407641
+=> FEMALE 
+ Average Weighted Impurity =  0.29977777777777775 | ImpurityBSide: 0.3330864197530864 | ImpurityLSide: 0.0
+=> SPLEENPALPABLE 
+ Average Weighted Impurity =  0.30292947558770345 | ImpurityBSide: 0.40816326530612246 | ImpurityLSide: 0.27495593654863
+=> ANOREXIA 
+ Average Weighted Impurity =  0.30393939393939395 | ImpurityBSide: 0.396694214876033 | ImpurityLSide: 0.2777777777777778
+=> SGOT 
+ Average Weighted Impurity =  0.3047995482778092 | ImpurityBSide: 0.28065441052454043 | ImpurityLSide: 0.385633270321361
+=> ANTIVIRALS 
+ Average Weighted Impurity =  0.30619047619047624 | ImpurityBSide: 0.21875 | ImpurityLSide: 0.32284580498866217
+=> FIRMLIVER 
+ Average Weighted Impurity =  0.3069458128078817 | ImpurityBSide: 0.336734693877551 | ImpurityLSide: 0.2853745541022592
+=> AGE 
+ Average Weighted Impurity =  0.3073517786561265 | ImpurityBSide: 0.2975206611570248 | ImpurityLSide: 0.3402646502835539
+=> BIGLIVER 
+ Average Weighted Impurity =  0.3075609756097561 | ImpurityBSide: 0.2777777777777778 | ImpurityLSide: 0.31409875074360505
+=> STEROID 
+ Average Weighted Impurity =  0.30779606583701324 | ImpurityBSide: 0.30964237211407875 | ImpurityLSide: 0.3061587753648986
+
+Decision Tree: 
+
+ ASCITES = True:
+  SPIDERS = True:
+   VARICES = True:
+    HISTOLOGY = True:
+     MALAISE = True:
+      FATIGUE = True:
+       BILIRUBIN = True:
+        FEMALE = True:
+         Class dieProb: 1.0
+        FEMALE = False:
+         SPLEENPALPABLE = True:
+          ANOREXIA = True:
+           SGOT = True:
+            ANTIVIRALS = True:
+             FIRMLIVER = True:
+              AGE = True:
+               BIGLIVER = True:
+                STEROID = True:
+                 Class dieProb: 0.8113207547169812
+                STEROID = False:
+                 Class liveProb: 0.8085106382978723
+               BIGLIVER = False:
+                Class liveProb: 0.8333333333333334
+              AGE = False:
+               Class liveProb: 0.8181818181818182
+             FIRMLIVER = False:
+              Class liveProb: 0.7857142857142857
+            ANTIVIRALS = False:
+             Class liveProb: 0.875
+           SGOT = False:
+            Class liveProb: 0.8311688311688312
+          ANOREXIA = False:
+           Class liveProb: 0.7272727272727273
+         SPLEENPALPABLE = False:
+          Class liveProb: 0.7142857142857143
+       BILIRUBIN = False:
+        Class liveProb: 0.926829268292683
+      FATIGUE = False:
+       Class liveProb: 0.7352941176470589
+     MALAISE = False:
+      Class liveProb: 0.65
+    HISTOLOGY = False:
+     Class liveProb: 0.9285714285714286
+   VARICES = False:
+    Class dieProb: 0.6153846153846154
+  SPIDERS = False:
+   Class liveProb: 0.5483870967741935
+ ASCITES = False:
+  Class dieProb: 0.6666666666666666
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: die. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: die. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: die. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: live. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: die. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: live. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: live. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: die. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: live. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: die. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: live. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: live. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: live. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: live. Actual category: die
+
+Correctly Predicted category: die. Actual category: die
+
+Correctly Predicted category: die. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: die. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: die. Actual category: die
+
+Correctly Predicted category: die. Actual category: die
+
+Incorrectly Predicted category: live. Actual category: die
+
+Correctly Predicted category: die. Actual category: die
+
+Correctly Predicted category: die. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: live. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: die. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: die. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: live. Actual category: die
+
+Correctly Predicted category: die. Actual category: die
+
+Correctly Predicted category: die. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: live. Actual category: die
+
+Incorrectly Predicted category: live. Actual category: die
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Incorrectly Predicted category: die. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Correctly Predicted category: live. Actual category: live
+
+Success rate: 86.86131386861314 (119/137)
+
+Process finished with exit code 0
+
